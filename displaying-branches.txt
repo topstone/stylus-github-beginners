@@ -1,0 +1,159 @@
+@-moz-document domain("github.com") {
+/* 左上 menu */
+nav {
+  display: none;
+}
+
+/* 上部検索欄 */
+div.header-search {
+  display: none;
+}
+
+/* Sign in */
+div.HeaderMenu > div > div.position-relative.mr-3.mb-4.mb-lg-0.d-inline-block > a.HeaderMenu-link {
+  font-size: 0.01%;
+  color: black;
+}
+div.HeaderMenu > div > div.position-relative.mr-3.mb-4.mb-lg-0.d-inline-block > a.HeaderMenu-link::before {
+  font-size: 16px;
+  color: white;
+  content: "ログイン";
+}
+
+/* Sign up */
+div.HeaderMenu > div > a.HeaderMenu-link {
+  font-size: 0.01em;
+  color: black;
+}
+div.HeaderMenu > div > a.HeaderMenu-link::before {
+  font-size: 16px;
+  color: white;
+  content: "新規登録";
+}
+
+/* username */
+span.author::before {
+  vertical-align: super;
+  font-size: 50%;
+  background-color: var(--color-accent-fg);
+  color: white;
+  padding: 0.2em;
+  content: "利用者名:";
+}
+
+/* repository */
+div#repository-container-header > div > div > div > strong > a::before {
+  vertical-align: super;
+  font-size: 50%;
+  background-color: var(--color-accent-fg);
+  color: white;
+  padding: 0.2em;
+  margin-right: 0.5em;
+  content: "リポジトリ名:";
+}
+
+/* notifications */
+ul.pagehead-actions > li:first-child {
+  display: none;
+}
+
+/* star */
+ul.pagehead-actions > li:last-child {
+  display: none;
+}
+
+/* fork */
+ul.pagehead-actions > li:nth-child(2) > a > span#repo-network-counter {
+  font-size: 0.01%;
+}
+ul.pagehead-actions > li:nth-child(2) > a > span#repo-network-counter::before {
+  font-size: 12px;
+  content: "自分のリポジトリとして複製する";
+}
+
+/* Code */
+span[data-content="Code"] {
+  font-size: 0.01%;
+  color: rgb(246, 248, 250);
+}
+span[data-content="Code"]::after {
+  color: rgb(36, 41, 47);
+  font-size: 14px;
+  content: "コード"
+}
+
+/* Issues */
+span[data-content="Issues"] {
+  font-size: 0.01%;
+  color: rgb(246, 248, 250);
+}
+span[data-content="Issues"]::after {
+  color: rgb(36, 41, 47);
+  font-size: 14px;
+  content: "話題"
+}
+
+/* Pull requests */
+span[data-content="Pull requests"] {
+  font-size: 0.01%;
+  color: rgb(246, 248, 250);
+}
+span[data-content="Pull requests"]::after {
+  color: rgb(36, 41, 47);
+  font-size: 14px;
+  content: "取り込みの要望"
+}
+
+/* Actions, Projects, Wiki, Security, Insights */
+a#actions-tab, a#projects-tab, a#wiki-tab, a#security-tab, a#insights-tab {
+  display: none;
+}
+
+/* branch */
+details#branch-select-menu > summary > span.css-truncate-target::before {
+  vertical-align: super;
+  font-size: 50%;
+  background-color: var(--color-accent-fg);
+  color: white;
+  padding: 0.2em;
+  margin-right: 1em;
+  content: "今開いている変種:";
+}
+
+/* branches */
+div.file-navigation > div.flex-self-center > a:first-of-type > span {
+  font-size: 0.01%;
+  color: rgb(246, 248, 250);
+}
+div.file-navigation > div.flex-self-center > a:first-of-type > span::after {
+  color: rgb(36, 41, 47);
+  font-size: 14px;
+  content: "(変種の総数)"
+}
+
+/* tags */
+div.file-navigation > div.flex-self-center > a:last-of-type {
+  display: none;
+}
+
+/* Go to file */
+a[data-hotkey="t"] {
+  display: none;
+}
+
+/* Code */
+div.file-navigation > span > get-repo {
+  display: none;
+}
+
+/* About */
+div.Layout-sidebar > div:first-of-type > div:first-of-type > div.BorderGrid-cell > h2:first-of-type {
+  font-size: 0.01% !important;
+  color: white;
+}
+div.Layout-sidebar > div:first-of-type > div:first-of-type > div.BorderGrid-cell > h2:first-of-type::after {
+  color: rgb(36, 41, 47);
+  font-size: 14px;
+  content: "概要"
+}
+}
